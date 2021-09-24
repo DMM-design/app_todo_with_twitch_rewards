@@ -1,0 +1,30 @@
+version: "3.1"
+services:
+  server: 
+    build: 
+        context: ./
+        target: dev
+    command: npm run dev
+    volumes:
+      - .:/src
+    command: npm run dev
+    ports:
+      - ${PORT}:5000
+    environment:
+      NODE_ENV: development
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+        - ./db-data:/var/lib/postgresql/data
+    ports:
+        - 5432:5432
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080

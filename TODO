@@ -1,0 +1,21 @@
+
+Todo:
+  ✔ Setup Server @done(21-05-22 13:37)
+    ✔ creating a server docker @done(21-05-14 16:59)
+    ✔ creating a db postgres @done(21-05-14 16:59)
+    ✔ connecting to twitch chat @done(21-05-14 17:00)
+    ✔ creating tables to the db @done(21-05-21 06:14)
+      ✔ users (followers) @done(21-05-21 06:14)
+      ✔ messages_table @done(21-05-21 06:14)
+      ✔ rewards_table @done(21-05-21 06:14)
+    ✔ listening server @done(21-05-22 13:37)
+      ✔ sending to db @done(21-05-21 22:42)
+      ✔ get from db @done(21-05-21 22:43)
+
+  ☐ Setup Client
+    ✔ create vue-cli project @done(21-07-15 11:05)
+      ✔ vuex @done(21-07-15 11:05)
+      ✔ vuerouter @done(21-07-15 11:05)
+ 
+      
+
