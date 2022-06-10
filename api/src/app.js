@@ -20,7 +20,7 @@ class Main {
     this.app = express();
     this.io = socketio(this.start(), {
       cors: {
-        origin: ["http://192.168.110.116:8081/", "http://localhost:8081"],
+        origin: ["", "http://localhost:8081"],
         methods: ["GET", "POST"]
       }
     });
@@ -33,7 +33,7 @@ class Main {
     this.app.use(morgan('dev'));
     this.app.use(helmet());
     this.app.use(cors({
-      origin: ["http://192.168.110.116:8081/", "http://localhost:8081"],
+      origin: ["", "http://localhost:8081"],
       optionsSuccessStatus: 200 
     }));
     this.app.use(express.json());
